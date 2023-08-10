@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+p,
+img {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+.container-left-side {
+  width: 20%;
+  height: 64.5vh;
+  background-color: rgb(26, 25, 25);
+  margin-left: 10px;
+  border-radius: 10px;
+  z-index: 0;
+}
+.upper-left {
+  background-color: rgb(26, 25, 25);
+  height: 110px;
+  width: 20%;
+  margin-top: 10px;
+  margin-bottom: 7px;
+  margin-left: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.upper-left p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  padding-left: 25px;
+}
+.upper-left i {
+  margin-right: 15px;
+}
+.library-container {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  align-items: center;
+  margin-left: 25px;
+}
+.library-container-icon {
+  display: flex;
+  height: 50px;
+  width: 90px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.library-container p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bolder;
+}
+.container-lower-left {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-left: 21px;
+}
+.container-lower-left button {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bolder;
+  margin-left: 20px;
+  width: 80px;
+  height: 35px;
+  border-radius: 20px;
+  border: none;
+}
+.container-lower-left i {
+  padding-top: 7px;
+  padding-left: 8.9px;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: rgb(48, 47, 47);
+  color: white;
+}
+.container-lower {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  width: 230px;
+  margin-left: 28px;
+}
+select {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  width: 70px;
+}
+option {
+  background-color: rgb(48, 47, 47);
+}
+.like-container {
+  display: flex;
+  align-items: center;
+  margin-left: 22px;
+  margin-top: 15px;
+}
+.like-title {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.like-container img {
+  border-radius: 8px;
+}
+.like-title p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+}

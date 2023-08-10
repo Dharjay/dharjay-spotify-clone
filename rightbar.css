@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap");
+
+.container-rightbar {
+  background-color: rgb(26, 25, 25);
+  border-radius: 12px;
+  position: fixed;
+  top: 11px;
+  right: 12px;
+  width: 20%;
+  height: 82.1vh;
+  overflow-y: scroll;
+}
+.upper-right-icon {
+  margin: 10px 0px 0px 10px;
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 223px;
+}
+.upper-right-icon p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.title-lover img {
+  height: 230px;
+  border-radius: 12px;
+}
+.img-lover {
+  display: flex;
+  height: 230px;
+  width: 100%;
+  justify-content: center;
+}
+.title-lover {
+  margin-top: 20px;
+  margin-left: 12px;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+}
+.title-daylight {
+  display: flex;
+  margin-left: 15px;
+  width: 230px;
+  justify-content: space-between;
+  margin-top: 10px;
+  height: 60px;
+}
+.title-daylight p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+.right-title {
+  font-weight: bolder;
+  color: white;
+}
+.right-title-artist {
+  width: 100px;
+}
+.rightside-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  height: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.container-about-artist {
+  height: 430px;
+  width: 230px;
+  border-radius: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 22px;
+  background-color: rgb(37, 37, 37);
+  position: relative;
+}
+.container-about-artist img {
+  height: 230px;
+
+  border-radius: 12px 12px 0px 0px;
+}
+.followers-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-artist {
+  width: 120px;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 18px;
+}
+.followers-button button {
+  background-color: transparent;
+  border: solid 1px white;
+  height: 35px;
+  width: 100px;
+  margin-right: 13px;
+  margin-top: 15px;
+  border-radius: 20px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bolder;
+  transition: 0.5s;
+}
+.followers-button button:hover {
+  color: black;
+  background-color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.taylor-rightbar:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.container-p {
+  margin-top: 12px;
+  width: 200px;
+  margin-left: 11px;
+}
+.container-p p {
+  font-size: 14px;
+  font-weight: bold;
+}
+.about {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.about p {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bolder;
+}
+.lower-right-container {
+  background-color: rgb(37, 37, 37);
+  height: 90px;
+  width: 230px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  border-radius: 12px;
+}
+.lower-right-container p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bolder;
+  color: white;
+  font-size: 14px;
+  margin-left: 12px;
+  padding-top: 8px;
+}
+.queue img {
+  height: 45px;
+  width: 45px;
+  border-radius: 5px;
+}
+.queue p {
+  color: grey;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+.queue {
+  margin-left: 18px;
+  display: flex;
+  width: 200px;
+  height: 60px;
+  align-items: center;
+}
+.queue-p {
+  display: flex;
+  margin-left: 10px;
+  flex-direction: column;
+  justify-content: center;
+}
+.queue-p p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

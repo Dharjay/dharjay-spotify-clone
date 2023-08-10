@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="rightbar.css">
+     <link rel="stylesheet" href="leftbar.css">
+    <link rel="stylesheet" href="midbar.css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="content2.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <script
+      src="https://kit.fontawesome.com/483187a7c0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="icon"
+      href="img/spotify_alt_macos_bigsur_icon_189704.png"
+      type="image/icon type"
+    />
+    <link rel="stylesheet" href="play.css" />
+    <title>Spotify</title>
+  </head>
+  <body>
+    <div class="container-bottom-play">
+      <div class="album-text">
+        <img
+          class="lover"
+          src="img/lover.jpg"
+          alt=""
+          height="60px"
+          width="60px"
+          style="border-radius: 3px"
+        />
+        <div class="album-text-p">
+          <p class="title" style="color: white; padding-bottom: 5px">Daylight</p>
+          <p class="artist">Taylor Swift</p>
+          <div class="album-text-icon">
+            <i class="fa-solid fa-heart" style="color: #36f207"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-playbar">
+        <div class="playbar-buttons">
+          <button class="button-playbar">
+            <i class="fa-solid fa-shuffle fa-xl"></i>
+          </button>
+          <button class="button-playbar">
+            <i
+              class="fa-solid fa-forward-step fa-flip-horizontal fa-xl"
+             
+            ></i>
+          </button>
+          <button class="play-button">
+            <i class="fa-solid fa-play" style="color: #000000"></i>
+          </button>
+          <button class="button-playbar">
+            <i
+              class="fa-solid fa-forward-step fa-xl"
+             
+            ></i>
+          </button>
+          <button class="button-playbar">
+            <i class="fa-solid fa-repeat fa-xl" ></i>
+          </button>
+        </div>
+        <!---->
+        <div class="container-progress">
+          <span>0:49</span>
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+
+          <span>4:13</span>
+        </div>
+        <!---->
+      </div>
+      <!---right side playbar-->
+      <div class="container-rightside">
+        <div class="right-icons">
+          <i class="fa-solid fa-file-audio fa-md" ></i>
+          <i class="fa-solid fa-microphone fa-md" ></i>
+          <i class="fa-solid fa-bars fa-md" ></i>
+          <i class="fa-solid fa-computer fa-md" ></i>
+          <i class="fa-solid fa-volume-high fa-md"></i></i>
+        </div>
+
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="10"
+          class="slider"
+          id="myRange"
+        />
+      </div>
+    </div>
+    <!--left bar-->
+    <div class="upper-left">
+      <p style="color: white; margin-top: 15px;">  <i class="fa-solid fa-home  fa-xl"></i>Home</p>
+      <p><i class="fa-solid fa-search fa-xl"></i>Search</p>
+    </div>
+<div class="container-left-side"> <!--div of leftbar container-->
+  <div class="library-container">
+    <i class="fa-solid fa-book fa-xl"></i> <p style="padding-left: 18px;">Your Library</p>
+    <div class="library-container-icon">
+      <i style="padding-right: 20px;" class="fa-solid fa-search fa-add fa-xl"></i>
+      <i class="fa-solid fa-arrow-right fa-xl" ></i>
+    </div>
+  </div>
+  
+<div class="container-lower-left">
+  <i class="fa-solid fa-x fa-l"></i>
+  <button>Playlist</button>
+</div>
+
+<div class="container-lower">
+  <i class="fa-solid fa-search fa-l"></i>
+  <div class="custom-select">
+    <select>
+      <option value="0">Recents</option>
+      <option value="1">Recently Added</option>
+      <option value="2">Alphabetical</option>
+      <option value="3">Creator</option>
+      <option value="4">Custom Order</option>
+
+    </select>
+  </div>
+</div>
+
+<div class="like-container">
+  <img src="img/like.jpg" width="50px">
+  <div class="like-title">
+    <p style="padding-bottom: 1px; color: white;">Liked Songs</p>
+    <p>12 Songs &nbsp;<i class="fa-solid fa-thumbtack"></i></p>
+  </div>
+</div>
+
+<div class="like-container">
+  <img src="img/download.jpg" width="50px" style="border-radius: 25px;">
+  <div class="like-title">
+    <p style="padding-bottom: 1px; color: white; font-weight: bold;">Taylor Swift</p>
+    <p>Artist</p>
+  </div>
+</div>
+
+<div class="like-container">
+  <img src="img/al.jpg" width="50px" style="border-radius: 25px;">
+  <div class="like-title">
+    <p style="padding-bottom: 1px; color: white; font-weight: bold;">Al James</p>
+    <p>Artist</p>
+  </div>
+</div>
+
+<div class="like-container">
+  <img src="img/download (2).jpg" width="50px" style="border-radius: 25px;">
+  <div class="like-title">
+    <p style="padding-bottom: 1px; color: white; font-weight: bold;">Zack Tabudlo</p>
+    <p>Artist</p>
+  </div>
+</div>
+
+
+</div> <!--div of leftbar container-->
+
+
+<!--midbar-->
+<div class="container-midbar"> <!--div of midbar container-->
+  <div class="navbar" id="navbar">
+  
+    <div class="arrow">
+      <button onclick="changeContent(-1)" id="backButton" disabled><i class="fa-solid fa-less-than fa-md" style="color: #ffffff;"></i>  </button>
+      <button onclick="changeContent(1)" id="nextButton"> <i class="fa-solid fa-greater-than fa-md" style="color: #ffffff;"></i></button>  
+    </div>
+    <div class="right-buttons">
+        <button class="explore">Explore Premium </button>
+        <button class="group"><i class="fa-solid fa-users-rays" style="color: #646564;"></i></button>  
+        
+        <button onclick="changeContent(2)" style="background-color: transparent;"><img src="img/IMG_20230315_071906.jpg" alt=""> </button>
+    
+    </div>
+    </div>
+    <!--content 1-->
+    <div class="content active" id="content1"> <!--inalis ko active nilagay ko muna sa content3-->
+  <div class="content-container"> <!--div of title card container-->
+    <p style="color: white; font-size: larger; font-weight: bolder; padding-left: 12px; ">Recently Played</p>
+
+
+<div class="title-cards">  <!--div of title card-->
+
+  <div onclick="changeContent(1)" class="title-card">
+    <img src="img/hothits.jpg" alt="">
+    <p style="margin-top: 10px; color: white; font-weight: bolder; font-size: 15px;">Hot Hits Philippines</p>
+    <p class="card-paragraph">Best Tracks from the world of OPM</p>
+    <div class="card-button">
+      <button onclick="changeContent(1)" ><i class="fa-solid fa-pause fa-xl" style="color: #000000;"></i></button>
+    </div>
+   
+  </div>
+
+  <div class="title-card">
+    <img src="img/like.jpg" alt="">
+    <p style="margin-top: 10px; color: white; font-weight: bolder; font-size: 15px;">Liked Songs</p>
+    <p class="card-paragraph">14 Songs</p>
+    <div class="card-button">
+      <button ><i class="fa-solid fa-play fa-xl" style="color: #000000;"></i></button>
+    </div>
+  </div>
+
+  <div class="title-card">
+    <img src="img/download (2).jpg" alt="">
+    <p style="margin-top: 10px; color: white; font-weight: bolder; font-size: 15px;">Zack Tabudlo</p>
+    <p class="card-paragraph">Artist</p>
+    <div class="card-button">
+      <button ><i class="fa-solid fa-play fa-xl" style="color: #000000;"></i></button>
+    </div>
+  </div>
+
+  <div class="title-card">
+    <img src="img/download.jpg" alt="">
+    <p style="margin-top: 10px; color: white; font-weight: bolder; font-size: 15px;">Taylor Swift</p>
+    <p class="card-paragraph">Everything Taylor Swift Right Here</p>
+    <div class="card-button">
+      <button ><i class="fa-solid fa-play fa-xl" style="color: #000000;"></i></button>
+    </div>
+  </div>
+
+</div><!--div of title card-->
+
+  </div><!--div of title card container-->
+
+  <div class="content-container" id="content-container-2"> <!--div of title card container-->
+    <p style="color: white; font-size: larger; font-weight: bolder; padding-left: 12px; ">Today's Biggest Hits</p>
+
+
+<div class="title-cards">  <!--div of title card-->
+
+  <div class="title-card">
+    <img src="img/hothits.jpg" alt="">
+    <p style="margin-top: 10px; color: white; font-weight: bolder; font-size: 15px;">Hot Hits Philippines</p>
+    <p class="card-paragraph">Best Tracks from the world of OPM</p>
+    <div class="card-button">
+      <button ><i class="fa-solid fa-play fa-xl" style="color: #000000;"></i></button>
+    </div>
+  </div>
+
+  <div class="title-card">
+    <img src="img/tatak.jpg" alt="">
+    <p style="margin-top: 10px; color: white; font-weight: bolder; font-size: 15px;">Tatak Pinoy</p>
+    <p class="card-paragraph">Mga nangunguna sa mundo ng OPM</p>
+    <div class="card-button">
+      <button ><i class="fa-solid fa-play fa-xl" style="color: #000000;"></i></button>
+    </div>
+  </div>
+
+  <div class="title-card">
+    <img src="img/viralhits.jpg" alt="">
+    <p style="margin-top: 10px; color: white; font-weight: bolder; font-size: 15px;">Viral Hits</p>
+    <p class="card-paragraph">Viral, trending and taking off.</p>
+    <div class="card-button">
+      <button ><i class="fa-solid fa-play fa-xl" style="color: #000000;"></i></button>
+    </div>
+  </div>
+
+  <div class="title-card">
+    <img src="img/tth.jpg" alt="">
+    <p style="margin-top: 10px; color: white; font-weight: bolder; font-size: 15px;">Today's Top Hits</p>
+    <p class="card-paragraph">The Weekend is on top of the Hottest 50!</p>
+    <div class="card-button">
+      <button ><i class="fa-solid fa-play fa-xl" style="color: #000000;"></i></button>
+    </div>
+  </div>
+
+</div><!--div of title card-->
+
+  </div><!--div of title card container-->
+
+  <div class="content-container" id="content-container-2"> <!--div of title card container-->
+    <p style="color: white; font-size: larger; font-weight: bolder; padding-left: 12px; ">Artist you like</p>
+
+
+<div class="title-cards">  <!--div of title card-->
+
+  <div class="title-card">
+    <img src="img/Screenshot 2023-07-26 013032.png" alt="">
+    <p style="margin-top: 10px; color: white; font-weight: bolder; font-size: 15px;">Taylor Swift Mix</p>
+    <p class="card-paragraph">Coldplay, Katy Perry and Harry Styles</p>
+    <div class="card-button">
+      <button ><i class="fa-solid fa-play fa-xl" style="color: #000000;"></i></button>
+    </div>
+  </div>
+
+  <div class="title-card">
+    <img src="img/coldplay.png" alt="">
+    <p style="margin-top: 10px; color: white; font-weight: bolder; font-size: 15px;">Coldplay Mix</p>
+    <p class="card-paragraph">Myley Cyrus, Bruno Mars and Oasis</p>
+    <div class="card-button">
+      <button ><i class="fa-solid fa-play fa-xl" style="color: #000000;"></i></button>
+    </div>
+  </div>
+
+  <div class="title-card">
+    <img src="img/Screenshot 2023-07-26 012927.png" alt="">
+    <p style="margin-top: 10px; color: white; font-weight: bolder; font-size: 15px;">Zack Tabudlo Mix</p>
+    <p class="card-paragraph">Sunkissed Lola, Adie and Taylor Swift.</p>
+    <div class="card-button">
+      <button ><i class="fa-solid fa-play fa-xl" style="color: #000000;"></i></button>
+    </div>
+  </div>
+
+  <div class="title-card">
+    <img src="img/al james.png" alt="">
+    <p style="margin-top: 10px; color: white; font-weight: bolder; font-size: 15px;">Al James Mix</p>
+    <p class="card-paragraph">Flow-G, Yuji and Calein</p>
+    <div class="card-button">
+      <button ><i class="fa-solid fa-play fa-xl" style="color: #000000;"></i></button>
+    </div>
+  </div>
+
+</div><!--div of title card-->
+
+  </div><!--div of title card container-->
+</div><!--content1-->
+
+<div class="content" id="content2"> <!--content2-->
+
+ <div class="hothits-container"><!--hothitscontainer-->
+  <div class="hothits-img-title">
+    <img class="title-img" src="img/hothits.jpg" alt="">
+    <div class="hothits-title">
+      <p style="color: white; font-weight: bold; font-size: 12px;">Public Playlist</p>
+      <p style="color: white; font-size: 35px; font-weight: bolder; margin-top: 5px;" >Hot Hits Philippines</p>
+      <p style="font-size: 12px; color: white; margin-top: 5px; ">Best Tracks from the world of OPM and Pop.</p>
+
+      <div style=" margin-top: 10px;" class="spotify-container">
+        <img width="30px" height="30px" style="border-radius: 20px;" src="img/spotify_alt_macos_bigsur_icon_189704.png" alt=""> 
+        <p style="color: white; font-size: 12px; font-weight: bold;">Spotify · 4,412,163 likes · 50 songs,<span style="color: rgb(59, 58, 58);"> 3hr 5 min</span> </p>
+      </div>
+    </div>
+  </div>
+ </div><!--hothitscontainer-->
+
+
+ <div class="hothits-icons"> <!--hothits iconsr-->
+  <div class="hothits-icons-container">
+  <button><i class="fa-solid fa-play fa-lg" style="color: #000000;"></i></button>
+  <i class="fa-regular fa-heart fa-xl" style="color: #f5f5f5;"></i>
+  <i class="fa-regular fa-circle-down fa-xl" style="color: white;"></i>
+</div>
+</div><!--hothits icons-->
+
+<div class="date-time"><!--date time icons-->
+  <p>#</p>
+  <p>Title</p>
+  <p style="padding-left: 130px;">Album</p>
+  <p style="padding-left: 43px;">Date Added</p>
+  <i class="fa-regular fa-clock fa-lg" style="color: #646564;"></i>
+</div><!--date time icons-->
+
+<div class="hothits-playlist"> <!--hothits playlist container-->
+  <div class="playlist-song" style="margin-top: 20px;">
+    <p>1</p>
+    <div style="margin-left: 90px;" class="hothits-song-title">
+      <img src="img/lola amour.jpg" alt="" width="35px" height="35px">
+      <div class="hothits-song-artist">
+      <p style="color: white; ">Raining in Manila</p>
+      <p>Lola Amour</p>
+    </div>
+    </div>
+    <p  style="font-size: 12px; margin-left: 90px;">Raining in Manila</p>
+    <p  style="font-size: 12px; margin-left: 90px;">2 days Ago</p>
+    <p  style="font-size: 12px; margin-left: 93px;">4:51</p>
+  </div>
+
+  <div class="playlist-song" style="margin-top: 10px;">
+    <p>2</p>
+    <div style="margin-left: 90px;" class="hothits-song-title">
+      <img src="img/gusto.jpg" alt="" width="35px" height="35px">
+      <div class="hothits-song-artist">
+      <p style="color: white; ">Gusto ft. Al James</p>
+      <p>Zack Tabudlo</p>
+    </div>
+    </div>
+    <p  style="font-size: 12px; margin-left: 90px;">Gusto</p>
+    <p  style="font-size: 12px; margin-left: 150px;">2 days Ago</p>
+    <p  style="font-size: 12px; margin-left: 93px;">4:20</p>
+  </div>
+
+  <div class="playlist-song" style="margin-top: 10px;">
+    <p>3</p>
+    <div style="margin-left: 90px;" class="hothits-song-title">
+      <img src="img/lover.jpg" alt="" width="35px" height="35px">
+      <div class="hothits-song-artist">
+      <p style="color: white; ">Lover</p>
+      <p>Taylor Swift</p>
+    </div>
+    </div>
+    <p  style="font-size: 12px; margin-left: 90px;">Lover</p>
+    <p  style="font-size: 12px; margin-left: 154px;">2 days Ago</p>
+    <p  style="font-size: 12px; margin-left: 93px;">3:41</p>
+  </div>
+
+  <div class="playlist-song" style="margin-top: 10px;">
+    <p>4</p>
+    <div style="margin-left: 90px;" class="hothits-song-title">
+      <img src="img/seven.jpg" alt="" width="35px" height="35px">
+      <div class="hothits-song-artist">
+      <p style="color: white; ">Seven</p>
+      <p>Jung Kook, Latto</p>
+    </div>
+    </div>
+    <p  style="font-size: 12px; margin-left: 90px;">Seven</p>
+    <p  style="font-size: 12px; margin-left: 148px;">2 days Ago</p>
+    <p  style="font-size: 12px; margin-left: 93px;">3:04</p>
+  </div>
+
+  <div class="playlist-song" style="margin-top: 10px;">
+    <p>5</p>
+    <div style="margin-left: 90px;" class="hothits-song-title">
+      <img src="img/ldr.jpg" alt="" width="35px" height="35px">
+      <div class="hothits-song-artist">
+      <p style="color: white; ">LDR - Sped Up</p>
+      <p>Shoti</p>
+    </div>
+    </div>
+    <p  style="font-size: 12px; margin-left: 90px;">Shoti Sped Up</p>
+    <p  style="font-size: 12px; margin-left: 105px;">2 days Ago</p>
+    <p  style="font-size: 12px; margin-left: 93px;">2:45</p>
+  </div>
+
+  <div class="playlist-song" style="margin-top: 10px;">
+    <p>6</p>
+    <div style="margin-left: 90px;" class="hothits-song-title">
+      <img src="img/lover.jpg" alt="" width="35px" height="35px">
+      <div class="hothits-song-artist">
+      <p style="color: white; ">Daylight</p>
+      <p>Taylor Swift</p>
+    </div>
+    </div>
+    <p  style="font-size: 12px; margin-left: 90px;">Daylight</p>
+    <p  style="font-size: 12px; margin-left: 140px;">2 days Ago</p>
+    <p  style="font-size: 12px; margin-left: 93px;">4:53</p>
+  </div>
+
+
+  <div class="playlist-song" style="margin-top: 10px;">
+    <p>7</p>
+    <div style="margin-left: 90px;" class="hothits-song-title">
+      <img src="img/al.jpg" alt="" width="35px" height="35px">
+      <div class="hothits-song-artist">
+      <p style="color: white; ">PSG</p>
+      <p>Al James</p>
+    </div>
+    </div>
+    <p  style="font-size: 12px; margin-left: 90px;">PSG</p>
+    <p  style="font-size: 12px; margin-left: 160px;">2 days Ago</p>
+    <p  style="font-size: 12px; margin-left: 93px;">3:00</p>
+  </div>
+
+
+  <div class="playlist-song" style="margin-top: 10px;">
+    <p>8</p>
+    <div style="margin-left: 90px;" class="hothits-song-title">
+      <img src="img/lover.jpg" alt="" width="35px" height="35px">
+      <div class="hothits-song-artist">
+      <p style="color: white; ">Cornelia Street</p>
+      <p>Taylor Swift</p>
+    </div>
+    </div>
+    <p  style="font-size: 12px; margin-left: 90px;">Lover</p>
+    <p  style="font-size: 12px; margin-left: 154px;">2 days Ago</p>
+    <p  style="font-size: 12px; margin-left: 93px;">4:47</p>
+  </div>
+
+  <div class="playlist-song" style="margin-top: 10px;">
+    <p>9</p>
+    <div style="margin-left: 90px;" class="hothits-song-title">
+      <img src="img/download.jpg" alt="" width="35px" height="35px">
+      <div class="hothits-song-artist">
+      <p style="color: white; ">Back to December</p>
+      <p>Taylor Swift</p>
+    </div>
+    </div>
+    <p  style="font-size: 12px; margin-left: 90px;">Speak Now</p>
+    <p  style="font-size: 12px; margin-left: 123px;">2 days Ago</p>
+    <p  style="font-size: 12px; margin-left: 93px;">4:54</p>
+  </div>
+
+
+
+</div> <!--hothits playlist container-->
+
+
+
+
+</div> <!--content2-->
+
+
+<div class="content " id="content3"><!--profile content3-->
+<div class="profile-container"> <!--profile container-->
+  <div class="profile-and-profile-p">
+
+    <div class="profile-image">
+      <img src="img/358773648_248780248043598_7535648684359194640_n.jpg" alt="">
+    </div>
+  
+    <div class="profile-p">
+      <p class="profile">Profile</p>
+      <p class="name">Dharjay</p>
+      <p class="following">3 following</p>
+    </div>
+  </div>
+</div><!--profile container-->
+<div class="top-artist-container"> 
+  <div class="top-side">
+    <p style="color: white; font-size: 20px; font-weight: bolder;">Top Artist This Month</p>
+    <p style="font-size: 13px;">Only Visible to you</p>
+  </div>
+ 
+  <div class="title-cards" id="profile-card">  <!--div of title card-->
+
+    <div class="title-card">
+      <img src="img/download.jpg" alt="">
+      <p style="margin-top: 10px; color: white; font-weight: bolder; font-size: 15px;">Taylor Swift</p>
+      <p class="card-paragraph">Artist</p>
+      <div class="card-button">
+        <button ><i class="fa-solid fa-play fa-xl" style="color: #000000;"></i></button>
+      </div>
+    </div>
+  
+    <div class="title-card">
+      <img src="img/al.jpg" alt="">
+      <p style="margin-top: 10px; color: white; font-weight: bolder; font-size: 15px;">Al James</p>
+      <p class="card-paragraph">Artist</p>
+      <div class="card-button">
+        <button ><i class="fa-solid fa-play fa-xl" style="color: #000000;"></i></button>
+      </div>
+    </div>
+  
+    <div class="title-card">
+      <img src="img/download (2).jpg" alt="">
+      <p style="margin-top: 10px; color: white; font-weight: bolder; font-size: 15px;">Zack Tabudlo</p>
+      <p class="card-paragraph">Artist</p>
+      <div class="card-button">
+        <button ><i class="fa-solid fa-play fa-xl" style="color: #000000;"></i></button>
+      </div>
+    </div>
+  
+    <div class="title-card">
+      <img src="img/tth.jpg" alt="">
+      <p style="margin-top: 10px; color: white; font-weight: bolder; font-size: 15px;">The Weekend</p>
+      <p class="card-paragraph">Artist</p>
+      <div class="card-button">
+        <button ><i class="fa-solid fa-play fa-xl" style="color: #000000;"></i></button>
+      </div>
+    </div>
+  </div><!--div of title card-->
+  
+<div class="top-tracks"> <!--top tracks-->
+  <div class="top-tracks-p">
+    <p style="color: white; font-size: 20px; font-weight: bolder;">Top Tracks This Month</p>
+    <p style="font-size: 13px;">Only Visible to you</p>
+  </div>
+
+  <div class="song-container">
+<div class="song"> <!--song card-->
+  <div class="left-side-song">
+    <p class="num">1</p>
+    <img src="img/lover.jpg" alt="">
+    <div class="song-artist">
+      <p style="color: white; font-weight: bold;">Daylight</p>
+      <p style="font-size: 12px;">Taylor Swift</p>
+    </div>
+  </div>
+
+  <div class="song-title">
+    <p>Lover</p>
+  </div>
+  <div class="time-icon">
+    <i class="fa-solid fa-heart fa-l" style="color: rgb(12, 231, 12)"></i>
+    <p>4:53</p>
+  </div>
+</div><!--song card-->
+
+<div class="song"> <!--song card-->
+  <div class="left-side-song">
+    <p class="num">2</p>
+    <img src="img/download (2).jpg" alt="">
+    <div class="song-artist">
+      <p style="color: white; font-weight: bold;">Gusto ft. Al James</p>
+      <p style="font-size: 12px;">Zack Tabudlo</p>
+    </div>
+  </div>
+
+  <div class="song-title">
+    <p>Gusto</p>
+  </div>
+  <div class="time-icon">
+    <i class="fa-solid fa-heart fa-l" style="color: rgb(12, 231, 12)"></i>
+    <p>4:53</p>
+  </div>
+</div><!--song card-->
+
+
+<div class="song"> <!--song card-->
+  <div class="left-side-song">
+    <p class="num">3</p>
+    <img src="img/download.jpg" alt="">
+    <div class="song-artist">
+      <p style="color: white; font-weight: bold;">Everything Has Changed</p>
+      <p style="font-size: 12px;">Taylor Swift ft. Ed Sheeran</p>
+    </div>
+  </div>
+
+  <div class="song-title">
+    <p>Red</p>
+  </div>
+  <div class="time-icon">
+    <i class="fa-solid fa-heart fa-l" style="color: rgb(12, 231, 12)"></i>
+    <p>4:53</p>
+  </div>
+</div><!--song card-->
+
+<div class="song"> <!--song card-->
+  <div class="left-side-song">
+    <p class="num">4</p>
+    <img src="img/17.jpeg" alt="">
+    <div class="song-artist">
+      <p style="color: white; font-weight: bold;">Back to December (Taylor Version)</p>
+      <p style="font-size: 12px;">Taylor Swift</p>
+    </div>
+  </div>
+
+
+  <div class="song-title">
+    <p>Speak Now</p>
+  </div>
+  <div class="time-icon">
+    <i class="fa-solid fa-heart fa-l" style="color: rgb(12, 231, 12)"></i>
+    <p>4:53</p>
+  </div>
+</div><!--song card-->
+</div>
+</div> <!--top tracks-->
+
+</div>
+</div><!--content3-->
+</div> <!--div of midbar container-->
+
+
+<!--div of rightbar container-->
+<div class="container-rightbar">
+  <div class="upper-right">
+    <div class="upper-right-icon">
+      <p>Liked Songs</p>
+      <i class="fa-solid fa-x fa-l"></i>
+    </div>
+    
+  </div>
+
+  <div class="title-lover">
+    <div class="img-lover">
+      <img src="img/lover.jpg" alt="">
+    </div>
+    
+    <div class="title-daylight">
+      <div class="right-title-artist">
+        <p class="right-title">Daylight</p>
+        <p>Taylor Swift</p>
+      </div>
+      
+      <div class="rightside-icon">
+        <i class="fa-solid fa-heart fa-xl" style="color: #36f207"></i>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-about-artist">
+    <img src="img/17.jpeg" alt="">
+    <div class="about">
+      <p>About the artist</p>
+    </div>
+   
+    <div class="followers-button">
+      <div class="container-artist">
+        <p class="taylor-rightbar" style="padding-bottom: 10px; font-weight: bolder; color: white;">Taylor Swift</p>
+        <p>98,509,495 monthly listeners</p>
+      </div>
+      
+      <button>Unfollow</button>
+    </div>
+   
+  <div class="container-p">
+    <p>Taylor Swift is that rarest of pop phenomena; a superstar who managed to completely cross...</p>
+  </div>
+  </div>
+
+  <div class="lower-right-container">
+<p>Next in queue</p>
+
+<div class="queue">
+  <img src="img/lover.jpg" alt="">
+  <div class="queue-p">
+    <p style="color: white; font-weight: bolder;"><marquee scrollamount="3" direction="right">All of the girls you loved before</marquee> </p>
+    <p>Taylor Swift</p>
+  </div>
+  
+</div>
+  </div>
+ </div><!--div of rightbar container-->
+
+ <script>
+  let currentContentIndex = 1;
+  const totalContents = 3;
+
+  function changeContent(direction) {
+    //Hide the currently displayed content
+    document.getElementById(`content${currentContentIndex}`).classList.remove('active');
+    
+
+    // Calculate the next content index based on the direction (-1 for back, 1 for next)
+    currentContentIndex = (currentContentIndex + direction - 1) % totalContents + 1;
+
+    // Show the new content
+    document.getElementById(`content${currentContentIndex}`).classList.add('active');
+  
+    // Update buttons based on the current content index
+    updateButtons();
+    updateNavbar();
+
+    function updateButtons() {
+      // Disable "Back" button when on the first content
+      const backButton = document.getElementById('backButton');
+      backButton.disabled = currentContentIndex === 1;
+
+      // Disable "Next" button when on the last content
+      const nextButton = document.getElementById('nextButton');
+      nextButton.disabled = currentContentIndex === totalContents;
+    }
+
+    function updateNavbar() {
+        const navbar = document.getElementById("navbar");
+        if (currentContentIndex === 3) {
+          navbar.classList.add("active2");
+        }
+         else {
+          navbar.classList.remove("active");
+          navbar.classList.remove("active2");
+          
+        }
+      }
+
+      // Set the default page to content1 on load
+      document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('content1').classList.add('active');
+ });
+ 
+  }
+</script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+.profile-container {
+  z-index: 101;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3d3e3e;
+  background-image: linear-gradient(1deg, #3d3e3e 0%, #000000 100%);
+}
+
+.profile-image img {
+  height: 270px;
+  width: 270px;
+  border-radius: 150px;
+}
+.profile-p {
+  margin-left: 20px;
+  height: 300px;
+  width: 300px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.profile-and-profile-p {
+  display: flex;
+  padding-top: 50px;
+}
+.profile-p p {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+.profile {
+  font-size: 13px;
+  font-weight: bolder;
+}
+.following {
+  font-size: 14px;
+}
+.name {
+  font-size: 80px;
+  font-weight: bolder;
+}
+
+.top-artist-container {
+  height: 350px;
+}
+.top-side p,
+.top-tracks p {
+  font-family: "Open Sans", sans-serif;
+}
+.top-side {
+  padding-top: 12px;
+  padding-left: 12px;
+}
+#profile-card {
+  margin-left: 12px;
+}
+#profile-card p {
+  font-family: "Open Sans", sans-serif;
+}
+
+#profile-card img {
+  border-radius: 150px;
+}
+
+.top-tracks-p {
+  padding-left: 12px;
+  margin-bottom: 10px;
+}
+.top-tracks {
+  height: 300px;
+}
+.song img {
+  height: 40px;
+}
+.song {
+  margin-bottom: 13px;
+  width: 600px;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.5s ease;
+}
+.time-icon,
+.song-title {
+  display: flex;
+  align-items: center;
+  width: 70px;
+}
+
+.time-icon p,
+.song-title p {
+  color: white;
+  font-size: 12px;
+}
+.song i {
+  padding-right: 10px;
+}
+.left-side-song p {
+  padding-right: 20px;
+}
+.song-artist p {
+  font-size: 14px;
+}
+.left-side-song {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.song-artist p {
+  margin-left: 15px;
+}
+.song:hover {
+  background-color: rgb(46, 45, 45);
+  transition: 0.5s ease;
+  border-radius: 2px;
+}
+.left-side-song .num {
+  padding-left: 20px;
+}
+.song-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,231 @@
+.container-midbar {
+  top: 11px;
+  right: 295px;
+  position: fixed;
+  width: 57%;
+  height: 82.1vh;
+  border-radius: 12px;
+  z-index: 0;
+  overflow-y: scroll;
+  background-color: rgb(26, 25, 25);
+}
+.arrow button {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(48, 47, 47);
+}
+.arrow {
+  margin-left: 20px;
+  margin-top: 5px;
+  width: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+.right-buttons img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: solid 3px rgb(68, 67, 67);
+}
+.right-buttons button {
+  border: none;
+}
+.right-buttons {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  width: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.group {
+  height: 35px;
+  width: 35px;
+  background-color: rgb(48, 47, 47);
+  border-radius: 20px;
+  border: solid 1px white;
+}
+.explore {
+  width: 150px;
+  height: 35px;
+  border-radius: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bolder;
+}
+.navbar {
+  display: flex;
+  border-radius: 10px 0px 0px 0px;
+  align-items: center;
+  position: fixed;
+  width: 57%;
+  height: 70px;
+  background-color: rgb(26, 25, 25);
+  z-index: 1;
+}
+
+.navbar {
+  background-color: rgb(26, 25, 25);
+  padding: 10px;
+}
+.navbar.active {
+  background-color: rgba(26, 25, 25, 0.658);
+}
+.navbar.active2 {
+  background-color: rgba(26, 25, 25, 0.781);
+}
+.navbar.active2 .arrow button {
+  background-color: rgba(26, 25, 25, 0.548);
+}
+html {
+  scroll-behavior: smooth;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: rgb(26, 25, 25);
+}
+.container-rightbar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.container-rightbar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+  height: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/**midbar content**/
+.content-container {
+  margin-top: 75px;
+  margin-left: 10px;
+  height: 330px;
+}
+.content-container p {
+  font-family: "Open Sans", sans-serif;
+}
+.title-cards {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title-card img {
+  height: 150px;
+  border-radius: 12px;
+}
+.title-card button {
+  background-color: rgb(32, 196, 32);
+  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  position: absolute;
+  bottom: 60px;
+  right: 20px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+.title-card:hover button {
+  transform: translateY(-50px);
+}
+.title-card:not(:hover) button {
+  opacity: 0;
+}
+.title-card {
+  position: relative;
+  padding: 12px;
+  padding-top: 18px;
+  width: 180px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(17, 17, 17);
+  border-radius: 12px;
+  transition: 0.5s ease;
+}
+.card-paragraph {
+  font-size: 12px;
+  margin-top: 10px;
+  width: 150px;
+  color: rgb(165, 163, 163);
+  text-align: center;
+}
+#content-container-2 {
+  margin: 0;
+  margin-left: 10px;
+}
+.title-card:hover {
+  transition: 0.5s;
+  background-color: rgb(41, 40, 40);
+}
+.content {
+  display: none;
+}
+.content.active {
+  display: block;
+}
+
+@media screen and (max-width: 1197px) {
+  .container-midbar {
+    height: 743px;
+    right: 260px;
+    overflow: scroll;
+  }
+  .container-rightbar {
+    height: 743px;
+  }
+  .upper-left {
+    height: 120px;
+  }
+  .container-left-side {
+    height: 610px;
+  }
+  .song-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  select {
+    margin-right: 30px;
+  }
+  .library-container-icon {
+    margin-right: 16px;
+  }
+  .title-daylight {
+    padding-right: 30px;
+  }
+  .container-about-artist {
+    margin-left: 4px;
+  }
+  .lower-right-container {
+    margin-left: 4px;
+  }
+  .title-card {
+    width: 160px;
+  }
+  .title-card img {
+    height: 140px;
+  }
+  .navbar {
+    top: 10px;
+    left: 254px;
+    width: 684px;
+  }
+}
